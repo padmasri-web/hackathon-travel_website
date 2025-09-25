@@ -4,79 +4,129 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="travel.css">
 </head>
 <body>
-    <div class="home">
-        <div class="navbar">
-            <div><h2 class="mirai">Mirai Travels</h2></div>
-            <div class="links">
-                <a href="" class="Home">Home</a>
-                <a href="#destinations">Destinations</a>
-                <a href="#reviews">Reviews</a>
-                <a href="#packages">Packages</a>
-                <a href="#contact">Contact US</a>
+    <div class="box">
+        <h1>Do You Love me??</h1>
+        <h3>Click on YES or NO 👇</h3>
+          <!-- <div class="child"><h2>Click on YES or NO 👇</h2></div>   -->
+        <div class="oval1"><h2>Yes</h2></div>
+        <div class="oval2"><h2>No</h2></div>
 
-            </div>
-        </div>
+         </div>
 
-        <div class="welcome"><h2>Welcome <br> To Hyderabad...</h2></div>
+    
 
-    </div>
+<style>
+    .box{
+    border: 1px solid black;
+    margin: auto;
+    width:60%;
+    height: 800px;
+    background-color:lavender;
+    
+}
 
-    <div class="destinations" id="destinations">
-        <h2 class="explore">Explore Places...</h2>
+/* .child{
+    border: 2px dotted rgb(30, 30, 125);
+    border-radius: 10px;
+    height: 100px;
+     text-align: center;    
+    
 
-        <div class="cards">
-            <div class="card card1"><h4>Ramoji Film City</h4></div>
-            <div class="card card2"><h4>Charminar</h4></div>
-            <div class="card card3"><h4>Golkonda Fort</h4></div>
-            <div class="card card4"><h4>Salarjung Museum</h4></div>
-            <div class="card card5"><h4>Birla Mandir</h4></div>
-            <div class="card card6"><h4>Chowmahallah Palace</h4></div>
-        </div>
+} */
 
-    </div>
+ h3{
+    border: 2px dotted peru;
+    width: fit-content;
+    padding: 10px;
+    font-size: larger;
+   font-family: sans-serif;
+   font-style: oblique;
+   margin: auto;
+   text-align: center;
+   border-radius: 10px;
+   background-color: papayawhip;
+} 
+ 
 
-    <div class="reviews" id="reviews">
-        <h2 class="rr">Listen Them...</h2>
-
-        <div class="feedback">
-            <div class="r r1"><h3 class="col">Harsh Tripathi</h3><p>Very good travel experience, had a lot of fun</p></div>
-            <div class="r r2"><h3  class="col">Satyam Kumar</h3><p>Very good travel experience, had a lot of fun</p></div>
-            <div class="r r3"><h3  class="col">Preeti Y</h3><p>Very good travel experience, had a lot of fun</p></div>
-        </div>
-    </div>
-
-    <div class="packages" id="packages">
-        <div class="hp"><h2>Packages We Offer...</h2></div>
-
-        <div class="pack">
-            <div class="p p1"><h2 class="
-                info">Normal Bus</h2>
-            <p class="p1">Includes...<br>Food+Snacks</p></div>
-            <div class="p p2"><h2 class="
-                info">Laxuary</h2>
-            <p class="p1">AC Bus<br>Includes...<br>Food+Snacks</p></div>
-            <div class="p p3"><h2 class="
-                info">Super Laxuary</h2>
-            <p class="p1">AC+Sleeper Bus<br>Includes...<br>Food+Snacks</p></div>
-        </div>
-
-    </div>
-
-    <div class="contact" id="contact">
-           <h2 class="ch">contact US</h2>
-
-           
-              <div class="mail">miraitravels@gmail.com</div>
-           <div class="phone">9085736750</div>
-
-           
-    </div>
+.oval1{
+    width: 300px;
+    height: 200px;
+    border-radius: 40%;
+    float: left;
+    border: 1px solid plum;
+    margin-top: 200px;
+    margin-left: 50px;
 
 
+}
 
+.oval2{
+    width: 300px;
+    height: 200px;
+    border-radius:40%;
+    float: right;
+    border: 1px solid plum;
+    margin-top: 200px;
+    margin-right: 50px;
+
+}
+
+h1{
+    font-style: italic;
+    margin-left: 100px;
+    font-size: 50px;
+    text-align: center;
+    margin-right: 65px;
+    border: 1px double rosybrown;
+    background-color: aliceblue;
+    color: purple;
+
+   }
+
+h2{
+    text-align: center;
+    margin-top: 0px;
+}
+
+.oval1:hover{
+    color: brown;
+    font-style: italic;
+    border: 5px double blueviolet;
+    background-color: rosybrown;
+    width: 762px;
+    height: 400px;
+    border-radius: 50%; 
+    text-align: center;
+    font-size: 50px;
+
+    scale: 1;
+    background-image: url("https://img.freepik.com/premium-vector/cute-heart-kawaii-character-symbol-love-valentine-s-day-concept-hand-drawn-vector-emoticon_516241-457.jpg");
+    background-size: contain;}
+
+.oval1:hover::after{
+        content: "I Love You Too";
+        
+        font-size: 30px; /*font size of I Love you too*/
+        margin-bottom: 200px;  /* Why Margin bottom is not working*/
+        /* margin: auto;
+        margin-bottom: 100px;   To align this text do it in hover not here */
+    }
+    
+.oval2:hover{
+    background-color: black;
+    color: white;
+   text-align: center;
+}
+
+.oval2:hover::after{
+    content: "Bhaad Mein Jaa";
+    font-size: 30px;
+}
+
+
+</style>
 
 </body>
 </html>
